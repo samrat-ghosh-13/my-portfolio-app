@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faAward } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-awards',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./awards.component.css']
 })
 export class AwardsComponent implements OnInit {
+  faAward = faAward;
 
   constructor() { }
 

@@ -1,18 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  selector: "app-navigation",
+  templateUrl: "./navigation.component.html",
+  styleUrls: ["./navigation.component.css"]
 })
 export class NavigationComponent implements OnInit {
   collapsed = true;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  netImage: any = "../../assets/samrat.jpg";
+
+  onButtonClick() {
+    this.collapsed = !this.collapsed;
   }
-
-  netImage:any = "../../assets/samrat.jpg";
-
 }

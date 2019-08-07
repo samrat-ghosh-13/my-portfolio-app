@@ -20,7 +20,7 @@
     aria-controls="navbarSupportedContent"
     aria-expanded="false"
     aria-label="Toggle navigation"
-    (click)="collapsed = !collapsed"
+    (click)="onButtonClick()"
   >
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,7 +37,12 @@
         routerLinkActive="router-link-active"
         [routerLinkActiveOptions]="{ exact: true }"
       >
-        <a class="nav-link js-scroll-trigger" [routerLink]="['/']">About</a>
+        <a
+          class="nav-link js-scroll-trigger"
+          [routerLink]="['/']"
+          (click)="collapsed = !collapsed"
+          >About</a
+        >
       </li>
       <li
         class="nav-item"
