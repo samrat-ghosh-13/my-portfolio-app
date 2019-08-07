@@ -17,6 +17,8 @@ import {
   faBitbucket
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: "app-skills",
   templateUrl: "./skills.component.html",
@@ -38,6 +40,7 @@ export class SkillsComponent implements OnInit {
   faJira = faJira;
   faFreeCodeCamp = faFreeCodeCamp;
   faBitbucket = faBitbucket;
+  faCheck = faCheck;
 
   constructor() {}
 
