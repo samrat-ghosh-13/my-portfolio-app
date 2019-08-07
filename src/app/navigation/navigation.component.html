@@ -20,10 +20,16 @@
     aria-controls="navbarSupportedContent"
     aria-expanded="false"
     aria-label="Toggle navigation"
+    (click)="collapsed = !collapsed"
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div
+    class="collapse navbar-collapse"
+    id="navbarSupportedContent"
+    [class.collapse]="collapsed"
+    (window:resize)="collapsed = true"
+  >
     <ul class="navbar-nav">
       <li
         class="nav-item"
