@@ -84,7 +84,7 @@ p.lead {
   font-size: 3rem;
 }
 
-.dev-icons .list-inline-item i:hover {
+.dev-icons .list-inline-item fa-icon:hover {
   color: #bd5d38;
 }
 
