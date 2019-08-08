@@ -15,6 +15,7 @@ import { SkillsComponent } from "./skills/skills.component";
 import { InterestsComponent } from "./interests/interests.component";
 import { AwardsComponent } from "./awards/awards.component";
 import { FooterComponent } from './footer/footer.component';
+import { CommonModule } from '@angular/common';
 
 const appRoutes: Routes = [
   {
@@ -57,13 +58,14 @@ const appRoutes: Routes = [
     SkillsComponent,
     InterestsComponent,
     AwardsComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes), 
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
