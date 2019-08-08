@@ -42,6 +42,10 @@ export class SkillsComponent implements OnInit {
   faBitbucket = faBitbucket;
   faCheck = faCheck;
 
+  netImage: any = "../../assets/portfolio.jpg";
+  netImage1: any = "../../assets/thankIt.png";
+  netImage2: any = "../../assets/recipe.jpg";
+
   constructor() {}
 
   ngOnInit() {}
