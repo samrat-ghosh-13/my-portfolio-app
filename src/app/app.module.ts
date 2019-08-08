@@ -14,6 +14,7 @@ import { EducationComponent } from "./education/education.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { InterestsComponent } from "./interests/interests.component";
 import { AwardsComponent } from "./awards/awards.component";
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   {
@@ -55,7 +56,8 @@ const appRoutes: Routes = [
     EducationComponent,
     SkillsComponent,
     InterestsComponent,
-    AwardsComponent
+    AwardsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

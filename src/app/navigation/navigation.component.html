@@ -5,11 +5,15 @@
   <a class="navbar-brand js-scroll-trigger" href="#page-top">
     <span class="d-block d-lg-none">Samrat Ghosh</span>
     <span class="d-none d-lg-block">
-      <img
-        class="img-fluid img-profile rounded-circle mx-auto mb-2"
-        [src]="netImage"
-        alt="Samrat Ghosh"
-      />
+      <a
+        class="nav-link js-scroll-trigger"
+        [routerLink]="['/']"
+        (click)="onButtonClick()"
+        ><img
+          class="img-fluid img-profile rounded-circle mx-auto mb-2"
+          [src]="netImage"
+          alt="Samrat Ghosh"
+      /></a>
     </span>
   </a>
   <button
@@ -40,7 +44,7 @@
         <a
           class="nav-link js-scroll-trigger"
           [routerLink]="['/']"
-          (click)="collapsed = !collapsed"
+          (click)="onButtonClick()"
           >About</a
         >
       </li>
@@ -56,6 +60,7 @@
           role="presentation"
           routerLinkActive="router-link-active"
           [routerLinkActiveOptions]="{ exact: true }"
+          (click)="onButtonClick()"
           >Experience</a
         >
       </li>
@@ -66,6 +71,7 @@
           role="presentation"
           routerLinkActive="router-link-active"
           [routerLinkActiveOptions]="{ exact: true }"
+          (click)="collapsed = !collapsed"
           >Education</a
         >
       </li>
@@ -76,6 +82,7 @@
           role="presentation"
           routerLinkActive="router-link-active"
           [routerLinkActiveOptions]="{ exact: true }"
+          (click)="onButtonClick()"
           >Skills</a
         >
       </li>
@@ -86,6 +93,7 @@
           role="presentation"
           routerLinkActive="router-link-active"
           [routerLinkActiveOptions]="{ exact: true }"
+          (click)="onButtonClick()"
           >Interests</a
         >
       </li>
@@ -96,6 +104,7 @@
           role="presentation"
           routerLinkActive="router-link-active"
           [routerLinkActiveOptions]="{ exact: true }"
+          (click)="onButtonClick()"
           >Awards</a
         >
       </li>
