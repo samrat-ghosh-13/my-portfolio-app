@@ -16,6 +16,7 @@ import { InterestsComponent } from "./interests/interests.component";
 import { AwardsComponent } from "./awards/awards.component";
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   {
@@ -45,6 +46,14 @@ const appRoutes: Routes = [
   {
     path: "awards",
     component: AwardsComponent
+  },
+  {
+    path: "not-found", 
+    component: PageNotFoundComponent
+  }, 
+  {
+    path: "**", 
+    redirectTo: "/not-found"
   }
 ];
 
@@ -59,6 +68,7 @@ const appRoutes: Routes = [
     InterestsComponent,
     AwardsComponent,
     FooterComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
