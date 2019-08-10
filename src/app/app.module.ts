@@ -9,7 +9,6 @@ import { AppComponent } from "./app.component";
 import { NavigationComponent } from "./navigation/navigation.component";
 import { AboutComponent } from "./about/about.component";
 import { ExperienceComponent } from "./experience/experience.component";
-import { Routes, RouterModule } from "@angular/router";
 import { EducationComponent } from "./education/education.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { InterestsComponent } from "./interests/interests.component";
@@ -17,45 +16,6 @@ import { AwardsComponent } from "./awards/awards.component";
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
-const appRoutes: Routes = [
-  {
-    path: "",
-    component: AboutComponent
-  },
-  {
-    path: "about",
-    component: AboutComponent
-  },
-  {
-    path: "experience",
-    component: ExperienceComponent
-  },
-  {
-    path: "education",
-    component: EducationComponent
-  },
-  {
-    path: "skills",
-    component: SkillsComponent
-  },
-  {
-    path: "interests",
-    component: InterestsComponent
-  },
-  {
-    path: "awards",
-    component: AwardsComponent
-  },
-  {
-    path: "not-found", 
-    component: PageNotFoundComponent
-  }, 
-  {
-    path: "**", 
-    redirectTo: "/not-found"
-  }
-];
 
 @NgModule({
   declarations: [
@@ -74,7 +34,6 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    RouterModule.forRoot(appRoutes), 
     CommonModule
   ],
   providers: [],
